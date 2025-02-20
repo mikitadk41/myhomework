@@ -14,10 +14,6 @@ int main() {
 
 
     int* remixedArray = remixArray(array, size);
-    if (remixedArray == NULL) {
-        free(array);
-        return -1; 
-    }
     
     printArray(remixedArray, size);
     free(array);
