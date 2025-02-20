@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "dk_tool.h"
+#include "dk_tool.c"
 
 int main() {
     int size;
