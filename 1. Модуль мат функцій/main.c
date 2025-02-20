@@ -5,13 +5,11 @@
 int main() {
     int size;
     
-    printf("Enter the size of the array: ");
+    printf("Size of Arr: ");
     scanf("%d", &size);
 
     int* array = createArray(size);
-    if (array == NULL) {
-        return -1;
-    }
+    
     printArray(array, size);
 
 
@@ -20,6 +18,7 @@ int main() {
         free(array);
         return -1; 
     }
+    
     printArray(remixedArray, size);
     free(array);
     free(remixedArray);
